@@ -25,7 +25,6 @@ li {
   position:relative;
   float:left;
   color: rgba(130, 130, 130, 0.5);
-  /* transition: all 1s ease; */
 }
 li .black {
   color: rgba(78, 74, 74, 0.5);

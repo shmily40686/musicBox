@@ -21,10 +21,33 @@
     font-family: fantasy;
     font-weight: 600;
     font-size: 25px;
+    box-shadow: 5px 2.5px 10px rgb(121, 53, 53);
+    transition: all .07s ease;
+}
+
+.select-box:hover {
+    transform: scale(1.2);
 }
 
 .home-select-img {
     width: 20vw;
     height: 20vh;
     margin-bottom: 10px;
+}
+
+.backHome {
+    margin: 5%;
+    padding: 8px;
+    position: absolute;
+    border-radius: 5px;
+    color: #131313;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient(45deg, rgb(185, 8, 8) 0%, #e26565 100%);
+    border: none;
+    transition: all .07s ease;
+}
+
+.backHome:hover {
+    background: linear-gradient(45deg, #e26565 0%, rgb(185, 8, 8) 100%);
 }
