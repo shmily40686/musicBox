@@ -1,0 +1,30 @@
+#home { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 25, 25);
+    width: 100vw;
+    height: 100vh;
+}
+
+.select-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 25vw;
+    height: 30vh;
+    color: rgb(185, 8, 8);
+    font-family: fantasy;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.home-select-img {
+    width: 20vw;
+    height: 20vh;
+    margin-bottom: 10px;
+}

@@ -4,39 +4,79 @@
 <head>
     <title>music-box</title>
     <link rel="stylesheet" type="text/css" href="piano.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 
 <body>
-    <video width="320" height="240" id="pianoVideo" autoplay loop>
-        <source src="./background/piano.mp4" type="video/mp4">
-    </video>
-    <div id="pianoBox">
-        <ul class="set">
-            <li class="piano white b" data-key="65"></li>
-            <li class="piano black as" data-key="87"></li>
-            <li class="piano white a" data-key="83"></li>
-            <li class="piano black gs" data-key="69"></li>
-            <li class="piano white g" data-key="68"></li>
-            <li class="piano black fs" data-key="82"></li>
-            <li class="piano white f" data-key="70"></li>
-            <li class="piano white e" data-key="71"></li>
-            <li class="piano black ds" data-key="85"></li>
-            <li class="piano white d" data-key="72"></li>
-            <li class="piano black cs" data-key="73"></li>
-            <li class="piano white c" data-key="74"></li>
-            <li class="piano white b" data-key="75"></li>
-            <li class="piano black as" data-key="79"></li>
-            <li class="piano white a" data-key="76"></li>
-            <li class="piano black gs" data-key="80"></li>
-            <li class="piano white g" data-key="186"></li>
-            <li class="piano black fs" data-key="219"></li>
-            <li class="piano white f" data-key="222"></li>
-
-        </ul>
+    <div id="home">
+        <div class="select-box" data-page="stepSequencer">
+            <img class="home-select-img" src="./img/speaker.png">
+            <div>Step Sequencer</div>
+        </div>
+        <div class="select-box" data-page="pianoGame">
+            <img class="home-select-img" src="./img/piano.png">
+            <div>Piano</div>
+        </div>
+        <div class="select-box" data-page="pianoGame">
+            <img class="home-select-img" src="./img/piano.png">
+            <div>Piano</div>
+        </div>
     </div>
+    <div id="stepSequencer"></div>
+    <div id="pianoGame">
+        <video id="pianoVideo" autoplay loop>
+            <source src="./background/piano.mp4" type="video/mp4">
+        </video>
+        <div class="backHome">back</div>
+        <div id="pianoBox">
+            <ul class="set">
+                <li class="piano white b" data-key="65" data-text="A">A</li>
+                <li class="piano black as" data-key="87" data-text="W">W</li>
+                <li class="piano white a" data-key="83" data-text="S">S</li>
+                <li class="piano black gs" data-key="69" data-text="E">E</li>
+                <li class="piano white g" data-key="68" data-text="D">D</li>
+                <li class="piano black fs" data-key="82" data-text="R">R</li>
+                <li class="piano white f" data-key="70" data-text="F">F</li>
+                <li class="piano white e" data-key="71" data-text="G">G</li>
+                <li class="piano black ds" data-key="89" data-text="Y">Y</li>
+                <li class="piano white d" data-key="72" data-text="H">H</li>
+                <li class="piano black cs" data-key="85" data-text="U">U</li>
+                <li class="piano white c" data-key="74" data-text="J">J</li>
+                <li class="piano white b" data-key="75" data-text="K">K</li>
+                <li class="piano black as" data-key="73" data-text="I">I</li>
+                <li class="piano white a" data-key="76" data-text="L">L</li>
+                <li class="piano black gs" data-key="79" data-text="O">O</li>
+                <li class="piano white g" data-key="186" data-text=";">;</li>
+                <li class="piano black fs" data-key="80" data-text="P">P</li>
+                <li class="piano white f" data-key="222" data-text="''">'</li>
+            </ul>
+        </div>
+    </div>
+   
+    <script type="text/javascript" src="./home.js"></script>
     <script type="text/javascript" src="./piano.js"></script>
+    <script type="text/javascript" src="./eventListener.js"></script>
 
-    <audio data-key="65" src="./pianoSounds/tink.wav"></audio>
+    <audio data-key="87" src="./pianoSounds/b1.mp3"></audio>
+    <audio data-key="69" src="./pianoSounds/b2.mp3"></audio>
+    <audio data-key="82" src="./pianoSounds/b3.mp3"></audio>
+    <audio data-key="89" src="./pianoSounds/b4.mp3"></audio>
+    <audio data-key="85" src="./pianoSounds/b5.mp3"></audio>
+    <audio data-key="73" src="./pianoSounds/b6.mp3"></audio>
+    <audio data-key="79" src="./pianoSounds/b7.mp3"></audio>
+    <audio data-key="80" src="./pianoSounds/b8.mp3"></audio>
+
+    <audio data-key="65" src="./pianoSounds/w1.mp3"></audio>
+    <audio data-key="83" src="./pianoSounds/w2.mp3"></audio>
+    <audio data-key="68" src="./pianoSounds/w3.mp3"></audio>
+    <audio data-key="70" src="./pianoSounds/w4.mp3"></audio>
+    <audio data-key="71" src="./pianoSounds/w5.mp3"></audio>
+    <audio data-key="72" src="./pianoSounds/w6.mp3"></audio>
+    <audio data-key="74" src="./pianoSounds/w7.mp3"></audio>
+    <audio data-key="75" src="./pianoSounds/w8.mp3"></audio>
+    <audio data-key="76" src="./pianoSounds/w9.mp3"></audio>
+    <audio data-key="186" src="./pianoSounds/w10.mp3"></audio>
+    <audio data-key="222" src="./pianoSounds/w11.mp3"></audio>
 </body>
 
 </html>
