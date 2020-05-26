@@ -5,9 +5,17 @@
     <title>music-box</title>
     <link rel="stylesheet" type="text/css" href="piano.css">
     <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
 </head>
 
 <body>
+    <div id="nav">
+        <div id="logoBox">
+            <img id="logo" src="./img/logo.png">
+            <h1 id="logoWord">Music Box</h1>
+        </div>  
+    </div>
     <div id="home">
         <video id="homeVideo" autoplay loop muted>
             <source src="./background/home.mp4" type="video/mp4">
@@ -54,6 +62,9 @@
                 <li class="piano white f" data-key="222" data-text="''">'</li>
             </ul>
         </div>
+    </div>
+    <div id="footer">
+        ©2020 Xiaowen Ling
     </div>
     <audio data-key="87" src="./pianoSounds/b1.mp3"></audio>
     <audio data-key="69" src="./pianoSounds/b2.mp3"></audio>

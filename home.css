@@ -1,10 +1,19 @@
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('if.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+}
+
 #home { 
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: rgb(26, 25, 25); */
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
 }
 
 #homeVideo {
@@ -26,11 +35,13 @@
     width: 25vw;
     height: 30vh;
     color: rgb(185, 8, 8);
-    font-family: fantasy;
-    font-weight: 600;
-    font-size: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'MyWebFont', Arial, sans-serif;
+    letter-spacing: 10px;
     box-shadow: 5px 2.5px 10px rgb(121, 53, 53);
     transition: all .07s ease;
+    margin-bottom: 5vh;
 }
 
 .select-box:hover {

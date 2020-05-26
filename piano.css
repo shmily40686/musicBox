@@ -4,7 +4,7 @@
 
 #pianoBox {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
 #pianoVideo {
     z-index: -1;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     position: absolute;
     object-fit: cover;
 }
