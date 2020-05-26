@@ -9,6 +9,9 @@
 
 <body>
     <div id="home">
+        <video id="homeVideo" autoplay loop muted>
+            <source src="./background/home.mp4" type="video/mp4">
+        </video>
         <div class="select-box" data-page="stepSequencer">
             <img class="home-select-img" src="./img/speaker.png">
             <div>Step Sequencer</div>
@@ -24,7 +27,7 @@
     </div>
     <div id="stepSequencer"></div>
     <div id="pianoGame">
-        <video id="pianoVideo" autoplay loop>
+        <video id="pianoVideo" autoplay loop muted>
             <source src="./background/piano.mp4" type="video/mp4">
         </video>
         <button class="backHome" id="pianoButton" data-page="pianoGame">Back To Home</button>

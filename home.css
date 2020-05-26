@@ -2,9 +2,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(26, 25, 25);
+    /* background-color: rgb(26, 25, 25); */
     width: 100vw;
     height: 100vh;
+}
+
+#homeVideo {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
 }
 
 .select-box {
@@ -45,9 +53,10 @@
     font-weight: 600;
     background: linear-gradient(45deg, rgb(185, 8, 8) 0%, #e26565 100%);
     border: none;
-    transition: all .07s ease;
+    -webkit-transition: all .2s ease-in;
 }
 
 .backHome:hover {
     background: linear-gradient(45deg, #e26565 0%, rgb(185, 8, 8) 100%);
+   transform: scale(1.1);
 }

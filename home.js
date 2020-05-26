@@ -1,5 +1,8 @@
 let page = "home"
 
+const homeBackgroundVideo = document.getElementById("homeVideo")
+homeBackgroundVideo.playbackRate = 0.6;
+
 const boxes = document.querySelectorAll(".select-box")
 boxes.forEach(each => {
     each.addEventListener("click", clickHandler)
