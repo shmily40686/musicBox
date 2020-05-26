@@ -9,11 +9,16 @@
 
 #logoBox {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #logo {
     width: 7vw;
     height: 10vh;
+    margin-top: 3px;
+    margin-right: 8px;
+
 }
 
 #logoWord {
