@@ -39,7 +39,7 @@ body {
     font-size: 20px;
     font-family: 'MyWebFont', Arial, sans-serif;
     letter-spacing: 10px;
-    box-shadow: 5px 2.5px 10px rgb(121, 53, 53);
+    box-shadow: 5px 2.5px 10px rgb(196, 189, 189);
     transition: all .07s ease;
     margin-bottom: 5vh;
 }
