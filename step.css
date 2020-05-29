@@ -48,7 +48,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(30deg, #e67c7c,#d60d1c);
+    background: linear-gradient(30deg, #635959,#000000);
+    color:white;
     border-radius: 5px;
     box-shadow: 2px 1px 2px;
 }   
@@ -62,7 +63,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(30deg, #e67c7c,#d60d1c);
+    background: linear-gradient(30deg, #000000,#d60d1c);
+    color: white;
+    font-size: 12px;
 }
 .bar-button {
     width: 5vw;
