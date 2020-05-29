@@ -23,7 +23,7 @@
         </video>
         <div class="select-box" data-page="stepSequencer">
             <img class="home-select-img" src="./img/speaker.png">
-            <div>Step Sequencer</div>
+            <div id="step-select-text">Step Sequencer</div>
         </div>
         <div class="select-box" data-page="pianoGame">
             <img class="home-select-img" src="./img/piano.png">
@@ -35,6 +35,7 @@
         </div>
     </div>
     <div id="stepSequencer">
+        <button class="backHome"  data-page="stepSequencer">Back To Home</button>
         <video id="homeVideo" autoplay loop muted>
             <source src="./background/step.mp4" type="video/mp4">
         </video>
@@ -53,7 +54,7 @@
         <video id="pianoVideo" autoplay loop muted>
             <source src="./background/piano.mp4" type="video/mp4">
         </video>
-        <button class="bstep" id="pianoButton" data-page="pianoGame">Back To Home</button>
+        <button class="backHome" data-page="pianoGame">Back To Home</button>
         <div id="pianoBox">
             <ul class="set">
                 <li class="piano white b" data-key="65" data-text="A">A</li>

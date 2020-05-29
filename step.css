@@ -1,5 +1,6 @@
 #stepSequencer {
     display: none;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #stepSequencer-box {
@@ -27,6 +28,7 @@
     overflow-y: scroll;
     border: 1px solid #c4c4c4;
     border-radius: 5px;
+    background: rgb(255,255,255,0.5);
 }
 
 #board {
@@ -65,8 +67,9 @@
     align-items: center;
     background: linear-gradient(30deg, #000000,#d60d1c);
     color: white;
-    font-size: 12px;
+    font-size: 0.5em;
 }
+
 .bar-button {
     width: 5vw;
     height: 5vh;
@@ -74,7 +77,10 @@
     margin: 5px;
     background: #242424;
     color: white;
-    font-size: 15px;
+    font-size: 0.9em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+
 }
 .active {
     background: linear-gradient(30deg, #652a2a,#d60d1c);
