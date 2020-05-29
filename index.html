@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="piano.css">
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="step.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
 </head>
 
@@ -33,7 +34,11 @@
             <div>Piano</div>
         </div>
     </div>
-    <div id="stepSequencer"></div>
+    <div id="stepSequencer">
+        <div id="stepSequencer-box">
+            <div id="board"></div>
+        </div>
+    </div>
     <div id="pianoGame">
         <video id="pianoVideo" autoplay loop muted>
             <source src="./background/piano.mp4" type="video/mp4">
@@ -87,8 +92,19 @@
     <audio data-key="186" src="./pianoSounds/w10.mp3"></audio>
     <audio data-key="222" src="./pianoSounds/w11.mp3"></audio>
 
+
+    <audio data-sound="boom" src="./stepSounds/boom.wav"></audio>
+    <audio data-sound="clap" src="./stepSounds/clap.wav"></audio>
+    <audio data-sound="hihat" src="./stepSounds/hihat.wav"></audio>
+    <audio data-sound="openhat" src="./stepSounds/openhat.wav"></audio>
+    <audio data-sound="ride" src="./stepSounds/ride.wav"></audio>
+    <audio data-sound="snare" src="./stepSounds/snare.wav"></audio>
+    <audio data-sound="tink" src="./stepSounds/tink.wav"></audio>
+    <audio data-sound="tom" src="./stepSounds/tom.wav"></audio>
+
     <script type="text/javascript" src="./home.js"></script>
     <script type="text/javascript" src="./piano.js"></script>
+    <script type="text/javascript" src="./step.js"></script>
     <script type="text/javascript" src="./eventListener.js"></script>
 </body>
 

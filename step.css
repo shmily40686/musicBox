@@ -1,0 +1,39 @@
+#stepSequencer {
+    display: none;
+}
+
+#stepSequencer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    background: blue;
+}
+
+#board {
+    width: 70vw;
+    height: 55vh;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.soundBox {
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+
+.active {
+    color: red;
+}
