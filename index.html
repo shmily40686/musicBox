@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="nav.css">
     <link rel="stylesheet" type="text/css" href="step.css">
+    <link rel="stylesheet" type="text/css" href="simon.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
 </head>
 
@@ -25,9 +26,9 @@
             <img class="home-select-img" src="./img/speaker.png">
             <div id="step-select-text">Step Sequencer</div>
         </div>
-        <div class="select-box" data-page="pianoGame">
-            <img class="home-select-img" src="./img/piano.png">
-            <div>Piano</div>
+        <div class="select-box" data-page="simonGame">
+            <img class="home-select-img" src="./img/simon.png">
+            <div>Simon</div>
         </div>
         <div class="select-box" data-page="pianoGame">
             <img class="home-select-img" src="./img/piano.png">
@@ -54,6 +55,14 @@
             </div>
             <div id="board"></div>
         </div>
+    </div>
+
+    <div id="simonGame">
+        <button class="backHome" data-page="simonGame">Back To Home</button>
+        <video id="homeVideo" autoplay loop muted>
+            <source src="./background/simon.mp4" type="video/mp4">
+        </video>
+        <div id="simonBox"></div>
     </div>
     <div id="pianoGame">
         <video id="pianoVideo" autoplay loop muted>
@@ -121,6 +130,7 @@
     <script type="text/javascript" src="./home.js"></script>
     <script type="text/javascript" src="./piano.js"></script>
     <script type="text/javascript" src="./step.js"></script>
+    <script type="text/javascript" src="./simon.js"></script>
     <script type="text/javascript" src="./eventListener.js"></script>
 </body>
 
