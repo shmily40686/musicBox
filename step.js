@@ -40,5 +40,18 @@ function playStepSound (tag) {
                 key.classList.add("active")
                 sequencer.push(tag)
             }
+            renderSequencer()
         }
+}
+
+
+function renderSequencer () {
+    const bar = document.getElementById("sequencer-bar")
+    bar.innerHTML = ""
+    for (let i = 0; i < sequencer.length; i++) {
+        const div = document.createElement("div")
+        div.innerText = sequencer[i]
+        div.classList.add("bar-div")
+        bar.append(div)
+    }
 }

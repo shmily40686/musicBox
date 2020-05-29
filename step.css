@@ -4,17 +4,34 @@
 
 #stepSequencer-box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 80vh;
-    background: blue;
+}
+
+#playBar {
+    width: 70vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+#sequencer-bar {
+    width: 55vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
 }
 
 #board {
     width: 70vw;
     height: 55vh;
-    background: pink;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -31,9 +48,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(30deg, #e67c7c,#d60d1c);
+    border-radius: 5px;
+    box-shadow: 2px 1px 2px;
 }   
 
 
+.bar-div {
+    height: 5vh;
+    width: 4vw;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(30deg, #e67c7c,#d60d1c);
+}
+
 .active {
-    color: red;
+    background: linear-gradient(30deg, #652a2a,#d60d1c);
+    border-radius: 5px;
+    box-shadow: -2px -1px 2px 1px;
 }
