@@ -65,3 +65,56 @@ function removeFromBar (e) {
     key.classList.remove("active")
     renderSequencer()
 }
+
+
+const playButton = document.querySelector('button[data-mode="play"]')
+const pauseButton = document.querySelector('button[data-mode="pause"]')
+
+playButton.addEventListener("click",playSequence)
+pauseButton.addEventListener("click", pauseSequence)
+
+let id;
+let timeSpeed = 500;
+let i = 0
+
+function playSequence () {
+    if(sequencer.length > 0) {
+        id = setInterval(() => {
+            console.log("sequencer",sequencer)
+            console.log("index", i)
+            let current = sequencer[i]
+            const sound = document.querySelector(`audio[data-sound="${current}"]`)
+            if (sound) {
+                sound.currentTime = 0;
+                sound.play()
+            }
+            if (i >= sequencer.length - 1) {
+                i = 0
+            } else {
+                i++
+            }
+        }, timeSpeed)
+        playButton.style.color = "rgb(185, 8, 8)";
+        playButton.disabled = true
+        pauseButton.style.color = "white";
+        pauseButton.disabled = false;
+    }
+}
+
+function pauseSequence () {
+    clearInterval(id)
+    pauseButton.style.color = "rgb(185, 8, 8)";
+    pauseButton.disabled = true
+    playButton.style.color = "white";
+    playButton.disabled = false;
+}
+
+const speed = document.getElementById("control")
+
+speed.addEventListener("change", () => {
+    const newSpeed = document.getElementById("control")
+    console.log("newSpeed", newSpeed.value)
+    timeSpeed = newSpeed.value;
+    clearInterval(id)
+    playSequence()
+})

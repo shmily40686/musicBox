@@ -42,10 +42,15 @@
         <div id="stepSequencer-box">
             <div id="playBar">
                 <div>
-                    <button class="bar-button">play</button>
-                    <button class="bar-button">pause</button>
+                    <button class="bar-button" data-mode="play">play</button>
+                    <button class="bar-button" data-mode="pause">pause</button>
                 </div>
                 <div id="sequencer-bar"></div>
+            </div>
+            <div id="control-box">
+                <div>Fast</div>
+                <input id="control" type="range" min="200" max="1000" >
+                <div>Slow</div>
             </div>
             <div id="board"></div>
         </div>

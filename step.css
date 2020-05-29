@@ -54,7 +54,12 @@
     color:white;
     border-radius: 5px;
     box-shadow: 2px 1px 2px;
-}   
+    transition: all .07s ease;
+} 
+
+.soundBox:hover {
+    transform: scale(1.1);
+}
 
 
 .bar-div {
@@ -80,8 +85,24 @@
     font-size: 0.9em;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
+    outline: none;
 
 }
+
+#control {
+    width: 40vw;
+    height: 5vh;
+}
+
+#control-box {
+    display: flex;
+    width: 55vw;
+    color: #c52628;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+}
+
 .active {
     background: linear-gradient(30deg, #652a2a,#d60d1c);
     border-radius: 5px;
