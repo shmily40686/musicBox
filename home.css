@@ -11,7 +11,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(26, 25, 25); */
     width: 100vw;
     height: 80vh;
 }
@@ -19,7 +18,7 @@ body {
 #homeVideo {
     z-index: -1;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     position: absolute;
     object-fit: cover;
 }
@@ -42,10 +41,17 @@ body {
     box-shadow: 5px 2.5px 10px rgb(196, 189, 189);
     transition: all .07s ease;
     margin-bottom: 5vh;
+    min-width: 210px;
+    min-height: 190px;
 }
 
 .select-box:hover {
     transform: scale(1.2);
+}
+
+#step-select-text {
+    font-size: 15px;
+    margin: 5px;
 }
 
 .home-select-img {
@@ -55,7 +61,7 @@ body {
 }
 
 .backHome {
-    margin: 5%;
+    margin: 2%;
     padding: 8px;
     position: absolute;
     border-radius: 5px;

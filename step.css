@@ -1,0 +1,111 @@
+#stepSequencer {
+    display: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#stepSequencer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+}
+
+#playBar {
+    width: 70vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+#sequencer-bar {
+    width: 55vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background: rgb(255,255,255,0.5);
+}
+
+#board {
+    width: 70vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.soundBox {
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(30deg, #635959,#000000);
+    color:white;
+    border-radius: 5px;
+    box-shadow: 2px 1px 2px  #40403f;
+    transition: all .07s ease;
+} 
+
+.soundBox:hover {
+    transform: scale(1.1);
+}
+
+
+.bar-div {
+    height: 5vh;
+    width: 4vw;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(30deg, #000000,#d60d1c);
+    color: white;
+    font-size: 0.5em;
+}
+
+.bar-button {
+    width: 5vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 5px;
+    background: #242424;
+    color: white;
+    font-size: 0.9em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    outline: none;
+    border: none;
+
+}
+
+#control {
+    width: 40vw;
+    height: 5vh;
+}
+
+#control-box {
+    display: flex;
+    width: 55vw;
+    color: #c52628;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+}
+
+.active {
+    background: linear-gradient(30deg, #652a2a,#d60d1c);
+    border-radius: 5px;
+    box-shadow: -2px -1px 2px 1px #40403f;
+}

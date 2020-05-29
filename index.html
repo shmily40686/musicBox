@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="piano.css">
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="step.css">
+    <link rel="stylesheet" type="text/css" href="simon.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
 </head>
 
@@ -22,23 +24,51 @@
         </video>
         <div class="select-box" data-page="stepSequencer">
             <img class="home-select-img" src="./img/speaker.png">
-            <div>Step Sequencer</div>
+            <div id="step-select-text">Step Sequencer</div>
         </div>
-        <div class="select-box" data-page="pianoGame">
-            <img class="home-select-img" src="./img/piano.png">
-            <div>Piano</div>
+        <div class="select-box" data-page="simonGame">
+            <img class="home-select-img" src="./img/simon.png">
+            <div>Simon</div>
         </div>
         <div class="select-box" data-page="pianoGame">
             <img class="home-select-img" src="./img/piano.png">
             <div>Piano</div>
         </div>
     </div>
-    <div id="stepSequencer"></div>
+    <div id="stepSequencer">
+        <button class="backHome"  data-page="stepSequencer">Back To Home</button>
+        <video id="homeVideo" autoplay loop muted>
+            <source src="./background/step.mp4" type="video/mp4">
+        </video>
+        <div id="stepSequencer-box">
+            <div id="playBar">
+                <div>
+                    <button class="bar-button" data-mode="play">play</button>
+                    <button class="bar-button" data-mode="pause">pause</button>
+                </div>
+                <div id="sequencer-bar"></div>
+            </div>
+            <div id="control-box">
+                <div>Fast</div>
+                <input id="control" type="range" min="200" max="1000" >
+                <div>Slow</div>
+            </div>
+            <div id="board"></div>
+        </div>
+    </div>
+
+    <div id="simonGame">
+        <button class="backHome" data-page="simonGame">Back To Home</button>
+        <video id="homeVideo" autoplay loop muted>
+            <source src="./background/simon.mp4" type="video/mp4">
+        </video>
+        <div id="simonBox"></div>
+    </div>
     <div id="pianoGame">
         <video id="pianoVideo" autoplay loop muted>
             <source src="./background/piano.mp4" type="video/mp4">
         </video>
-        <button class="backHome" id="pianoButton" data-page="pianoGame">Back To Home</button>
+        <button class="backHome" data-page="pianoGame">Back To Home</button>
         <div id="pianoBox">
             <ul class="set">
                 <li class="piano white b" data-key="65" data-text="A">A</li>
@@ -87,8 +117,20 @@
     <audio data-key="186" src="./pianoSounds/w10.mp3"></audio>
     <audio data-key="222" src="./pianoSounds/w11.mp3"></audio>
 
+
+    <audio data-sound="boom" src="./stepSounds/boom.wav"></audio>
+    <audio data-sound="clap" src="./stepSounds/clap.wav"></audio>
+    <audio data-sound="hihat" src="./stepSounds/hihat.wav"></audio>
+    <audio data-sound="openhat" src="./stepSounds/openhat.wav"></audio>
+    <audio data-sound="ride" src="./stepSounds/ride.wav"></audio>
+    <audio data-sound="snare" src="./stepSounds/snare.wav"></audio>
+    <audio data-sound="tink" src="./stepSounds/tink.wav"></audio>
+    <audio data-sound="tom" src="./stepSounds/tom.wav"></audio>
+
     <script type="text/javascript" src="./home.js"></script>
     <script type="text/javascript" src="./piano.js"></script>
+    <script type="text/javascript" src="./step.js"></script>
+    <script type="text/javascript" src="./simon.js"></script>
     <script type="text/javascript" src="./eventListener.js"></script>
 </body>
 

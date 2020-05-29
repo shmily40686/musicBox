@@ -18,9 +18,10 @@ function clickHandler (e) {
 }
 
 
-const backPiano = document.querySelector("#pianoButton")
-
-backPiano.addEventListener("click", backToHome)
+const backHome = document.querySelectorAll(".backHome")
+backHome.forEach((each) => {
+    each.addEventListener("click", backToHome)
+})
 
 function backToHome (e) {
     let pageToGo = e.currentTarget.dataset.page;
