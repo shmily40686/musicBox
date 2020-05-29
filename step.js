@@ -51,7 +51,17 @@ function renderSequencer () {
     for (let i = 0; i < sequencer.length; i++) {
         const div = document.createElement("div")
         div.innerText = sequencer[i]
+        div.dataset.tag = sequencer[i]
         div.classList.add("bar-div")
+        div.addEventListener("click",removeFromBar)
         bar.append(div)
     }
+}
+
+
+function removeFromBar (e) {
+    const key = document.querySelector(`div[data-sound="${e.target.dataset.tag}"]`)
+    sequencer.splice(sequencer.indexOf(e.target.dataset.tag), 1)
+    key.classList.remove("active")
+    renderSequencer()
 }

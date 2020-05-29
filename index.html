@@ -35,11 +35,14 @@
         </div>
     </div>
     <div id="stepSequencer">
+        <video id="homeVideo" autoplay loop muted>
+            <source src="./background/step.mp4" type="video/mp4">
+        </video>
         <div id="stepSequencer-box">
             <div id="playBar">
                 <div>
-                    <button>play</button>
-                    <button>pause</button>
+                    <button class="bar-button">play</button>
+                    <button class="bar-button">pause</button>
                 </div>
                 <div id="sequencer-bar"></div>
             </div>
@@ -50,7 +53,7 @@
         <video id="pianoVideo" autoplay loop muted>
             <source src="./background/piano.mp4" type="video/mp4">
         </video>
-        <button class="backHome" id="pianoButton" data-page="pianoGame">Back To Home</button>
+        <button class="bstep" id="pianoButton" data-page="pianoGame">Back To Home</button>
         <div id="pianoBox">
             <ul class="set">
                 <li class="piano white b" data-key="65" data-text="A">A</li>
