@@ -5,4 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #908787;
+    font-family: monospace;
 }
