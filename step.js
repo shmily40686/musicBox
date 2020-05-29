@@ -28,17 +28,17 @@ const sequencer = [];
 
 
 function playStepSound (tag) {
-    if(sequencer.length < 8) {
         const audio = document.querySelector(`audio[data-sound="${tag}"]`)
         const key = document.querySelector(`div[data-sound="${tag}"]`)
         if (audio && key) {
             if (key.classList.value.includes("active")) {
                 key.classList.remove("active")
+                sequencer.splice(sequencer.indexOf(tag),1)
             } else {
                 audio.currentTime = 0;
                 audio.play()
                 key.classList.add("active")
+                sequencer.push(tag)
             }
         }
-    }
 }
