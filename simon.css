@@ -6,12 +6,14 @@
     width: 100vw;
     height: 80vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #musicPlayBar {
     display: flex;
+    margin-bottom: 10vh;
 }
 
 .blocks {
@@ -20,8 +22,16 @@
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
+    transition: all .1s ease;
 }
 
 .playSound {
     background: orange;
 }
+
+#textArea {
+    color: rgb(185, 8, 8);
+    transition: all .3s ease-in;
+    display: none;
+}
+

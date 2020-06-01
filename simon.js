@@ -18,10 +18,12 @@ const game = [
 
 
 const playGameButton = document.querySelector("#playGame")
+const textArea = document.getElementById("textArea")
 playGameButton.addEventListener("click",playGameSound)
 
 
 function playGameSound () {
+    let count = game[turn].length
     for(let i = 0; i < game[turn].length; i++) {
         setTimeout(() => {
             const key = document.querySelector(`div[data-key="${game[turn][i]}"]`)
@@ -34,7 +36,9 @@ function playGameSound () {
                 sound.currentTime = 0;
                 sound.play()
             }
-        }, 500 * i + 1)
+            count--
+            if (count === 0) textArea.style.display = "block"
+        }, 800 * i + 1)
     }
     turn++
 }
