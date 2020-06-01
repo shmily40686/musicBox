@@ -62,7 +62,18 @@
         <video id="homeVideo" autoplay loop muted>
             <source src="./background/simon.mp4" type="video/mp4">
         </video>
-        <div id="simonBox"></div>
+        <div id="simonBox">
+            <div id="musicPlayBar">
+                <div class="blocks" data-key="0">red</div>
+                <div class="blocks" data-key="1">orange</div>
+                <div class="blocks" data-key="2">yellow</div>
+                <div class="blocks" data-key="3">green</div>
+                <div class="blocks" data-key="4">blue</div>
+                <div class="blocks" data-key="5">purple</div>
+                <div class="blocks" data-key="6">pink</div>
+            </div>
+            <button id="playGame">play</button>
+        </div>
     </div>
     <div id="pianoGame">
         <video id="pianoVideo" autoplay loop muted>
@@ -126,6 +137,16 @@
     <audio data-sound="snare" src="./stepSounds/snare.wav"></audio>
     <audio data-sound="tink" src="./stepSounds/tink.wav"></audio>
     <audio data-sound="tom" src="./stepSounds/tom.wav"></audio>
+
+
+
+    <audio data-sound="0" src="./animals/bird.mp3"></audio>
+    <audio data-sound="1" src="./animals/dog.mp3"></audio>
+    <audio data-sound="2" src="./animals/duck.mp3"></audio>
+    <audio data-sound="3" src="./animals/frog.mp3"></audio>
+    <audio data-sound="4" src="./animals/horse.mp3"></audio>
+    <audio data-sound="5" src="./animals/lion.mp3"></audio>
+    <audio data-sound="6" src="./animals/sheep.mp3"></audio>
 
     <script type="text/javascript" src="./home.js"></script>
     <script type="text/javascript" src="./piano.js"></script>

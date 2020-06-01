@@ -8,5 +8,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+#musicPlayBar {
+    display: flex;
+}
+
+.blocks {
+    width: 10vw;
+    height: 15vh;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.playSound {
+    background: orange;
 }
