@@ -22,16 +22,23 @@
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    transition: all .1s ease;
+    transition: all .5s ease;
 }
 
 .playSound {
-    background: orange;
+    opacity: 1;
+}
+
+.end {
+    /* background: rgb(185, 8, 8, 0.5); */
 }
 
 #textArea {
-    color: rgb(185, 8, 8);
     transition: all .3s ease-in;
-    display: none;
+    color: transparent;
+}
+
+#replay {
+     visibility: hidden;
 }
 

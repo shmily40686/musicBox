@@ -14,7 +14,12 @@ const game = [
     [0, 3, 2, 4, 5, 1, 6, 3, 2, 5, 6, 0, 1],
     [0, 3, 2, 4, 5, 1, 6, 3, 2, 5, 6, 0, 1, 4],
     [0, 3, 2, 4, 5, 1, 6, 3, 2, 5, 6, 0, 1, 4, 5],
+    [0, 3, 2, 4, 5, 1, 6, 3, 2, 5, 6, 0, 1, 4, 5, 4],
+    [0, 3, 2, 4, 5, 1, 6, 3, 2, 5, 6, 0, 1, 4, 5, 4, 1],
+    [0, 3, 2, 4, 5, 1, 6, 3, 2, 5, 6, 0, 1, 4, 5, 4, 1, 2],
 ]
+
+let playerHold = []
 
 
 const playGameButton = document.querySelector("#playGame")
@@ -37,10 +42,83 @@ function playGameSound () {
                 sound.play()
             }
             count--
-            if (count === 0) textArea.style.display = "block"
+            if (count === 0) {
+                textArea.style.color = "rgb(185, 8, 8)";
+                playGameButton.style.visibility = "hidden";
+            }
         }, 800 * i + 1)
     }
     turn++
 }
 
-const blocks = document.querySelectorAll(".blocks");
+const blocks = document.querySelectorAll(".blocks")
+const replay = document.getElementById("replay")
+
+
+
+replay.addEventListener("click", replayClickHandler)
+
+blocks.forEach((each) => {
+  each.addEventListener("click", clickHandler)   
+})
+
+function clickHandler (e) {
+    if (playGameButton.style.visibility === "hidden") {
+        const sound = document.querySelector(`audio[data-sound="${e.target.dataset.key}"]`)
+        e.target.classList.add("playSound")
+        playerHold.push(e.target.dataset.key * 1)
+        if (!checkWinOrLose()) {
+            blocks.forEach((each) => {
+                each.classList.add("end")
+                replay.style.visibility = "unset";
+                textArea.innerText = "Game Over"
+                textArea.style.color = "rgb(185, 8, 8)";
+            })
+        }  else {
+            if(playerHold.length === game[turn - 1].length) {
+                playGameButton.style.visibility = "unset";
+                textArea.style.color = "transparent";
+                playerHold = []
+            }
+        }
+
+        if (sound) {
+            sound.currentTime = 0;
+            sound.play()
+        }
+        setTimeout(() => {
+            e.target.classList.remove("playSound")
+        }, 600)
+    }
+}
+
+
+function checkWinOrLose () {
+    let gameArr = JSON.stringify(game[turn - 1]);
+    let playerArr = JSON.stringify(playerHold);
+    if(gameArr.length === playerArr.length) {
+        return gameArr === playerArr
+    } else {
+        let a = 0
+        while (a < playerHold.length) {
+            if (game[turn - 1][a] !== playerHold[a] )  {
+                return false;
+            } 
+            a++
+        }
+        return true
+    }
+}
+
+
+function replayClickHandler () {
+    turn = 0 
+    playerHold = []
+    textArea.innerText = "It's your Turn!!";
+    textArea.style.color = "transparent";
+    playGameButton.style.visibility = "unset";
+    blocks.forEach((each) => {
+        each.classList.remove("end")
+    })
+    replay.style.visibility = "hidden";
+}
