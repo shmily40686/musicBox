@@ -64,7 +64,7 @@
 }
 
 .playSound {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .end {
@@ -112,6 +112,7 @@
     letter-spacing: 8px;
     z-index: 2;
     border-radius: 5px;
+    outline: none;
 }
 
 #playGame:hover {
@@ -122,5 +123,6 @@
 #replay:hover {
     background: rgb(185, 8, 8, 0.5);
     border: none;
+    outline: none;
 }
 
