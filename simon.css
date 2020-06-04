@@ -1,3 +1,9 @@
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('if.ttf') format('truetype');
+}
+
+
 #simonGame {
     display: none;
 }
@@ -18,11 +24,43 @@
 
 .blocks {
     width: 10vw;
+    min-width: 98px;
+    min-height: 98px;
     height: 15vh;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid rgb(109, 109, 109);
     transition: all .5s ease;
+    opacity: 0.3;
+    margin-right: 5px;
+}
+
+.red {
+    background:red;
+}
+
+.orange {
+    background:orange;
+}
+
+.yellow {
+    background:yellow;
+}
+
+.green {
+    background:green;
+}
+
+.blue {
+    background:blue;
+}
+
+.purple {
+    background:purple;
+}
+
+.pink {
+    background:pink;
 }
 
 .playSound {
@@ -30,15 +68,59 @@
 }
 
 .end {
-    /* background: rgb(185, 8, 8, 0.5); */
+    background: rgb(185, 8, 8, 0.5);
+    opacity: 0.9;
 }
 
 #textArea {
-    transition: all .3s ease-in;
+    /* transition: all .1s ease-in; */
     color: transparent;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    margin-top: -50px;
+    font-size: 2rem;
+    font-family: "MyWebFont";
 }
 
 #replay {
-     visibility: hidden;
+    visibility: hidden;
+    width: 22vw;
+    height: 8vh;
+    font-size: 1.1rem;
+    font-family: "MyWebFont";
+    letter-spacing: 8px;
+    z-index: 2;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#textBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playGame {
+    width: 22vw;
+    height: 8vh;
+    font-size: 1.1rem;
+    font-family: "MyWebFont";
+    letter-spacing: 8px;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+#playGame:hover {
+    background: rgb(185, 8, 8, 0.5);
+    border: none;
+}
+
+#replay:hover {
+    background: rgb(185, 8, 8, 0.5);
+    border: none;
 }
 
