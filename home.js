@@ -1,8 +1,8 @@
 let page = "home"
 
-const stepInfo = "stepInfo";
-const simonInfo = "simonInfo";
-const pianoInfo = "pianoInfo";
+const stepInfo = "create your own beats by clicking the different sounds. click a sound once to add it to your beat, click it again to remove it";
+const simonInfo = " try and remember what buttons the computer chose. when it is your turn you need to click them in the correct order. Each turn adds one more sounds to remember";
+const pianoInfo = "each key on the piano is labeled with a key on your keyboard. press the key on your keyboard to hear that piano play";
 
 const homeBackgroundVideo = document.getElementById("homeVideo")
 homeBackgroundVideo.playbackRate = 0.6;
