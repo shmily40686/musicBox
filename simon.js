@@ -1,5 +1,5 @@
 let turn = 0;
-const game = [[0, 3]]
+let game = [[0, 3]]
 
 let playerHold = []
 
@@ -99,6 +99,7 @@ function checkWinOrLose () {
 function replayClickHandler () {
     turn = 0 
     playerHold = []
+    game = [[0, 3]]
     textArea.innerText = "It's your Turn!!";
     textArea.style.color = "transparent";
     playGameButton.style.visibility = "unset";

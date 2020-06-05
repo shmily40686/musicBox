@@ -19,21 +19,24 @@
         </div>  
     </div>
     <div id="home">
-        <video id="homeVideo" autoplay loop muted>
-            <source src="./background/home.mp4" type="video/mp4">
-        </video>
-        <div class="select-box" data-page="stepSequencer">
-            <img class="home-select-img" src="./img/speaker.png">
-            <div id="step-select-text">Step Sequencer</div>
+        <div id="homeTag">
+            <video id="homeVideo" autoplay loop muted>
+                <source src="./background/home.mp4" type="video/mp4">
+            </video>
+            <div class="select-box" data-page="stepSequencer">
+                <img class="home-select-img" src="./img/speaker.png">
+                <div id="step-select-text">Step Sequencer</div>
+            </div>
+            <div class="select-box" data-page="simonGame">
+                <img class="home-select-img" src="./img/simon.png">
+                <div>Simon</div>
+            </div>
+            <div class="select-box" data-page="pianoGame">
+                <img class="home-select-img" src="./img/piano.png">
+                <div>Piano</div>
+            </div>
         </div>
-        <div class="select-box" data-page="simonGame">
-            <img class="home-select-img" src="./img/simon.png">
-            <div>Simon</div>
-        </div>
-        <div class="select-box" data-page="pianoGame">
-            <img class="home-select-img" src="./img/piano.png">
-            <div>Piano</div>
-        </div>
+        <div id="info"></div>
     </div>
     <div id="stepSequencer">
         <button class="backHome"  data-page="stepSequencer">Back To Home</button>
