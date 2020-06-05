@@ -3,8 +3,18 @@
     height: 10vh;
     background: rgb(255, 255, 255, 0.9);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     color: #908787;
     font-family: monospace;
+}
+
+.icon-container {
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+#myInfo {
+   display: flex;
+   width: 80vw;
 }

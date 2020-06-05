@@ -98,9 +98,11 @@ body {
     background: linear-gradient(45deg, rgb(185, 8, 8) 0%, #e26565 100%);
     border: none;
     -webkit-transition: all .2s ease-in;
+    outline: none;
 }
 
 .backHome:hover {
     background: linear-gradient(45deg, #e26565 0%, rgb(185, 8, 8) 100%);
    transform: scale(1.1);
 }
+  

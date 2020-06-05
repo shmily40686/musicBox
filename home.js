@@ -36,7 +36,9 @@ function backToHome (e) {
     const currentBox = document.querySelector(`#${pageToGo}`)
     const home = document.querySelector("#home")
     home.style.display = "flex"
-    currentBox.style.display = "none"
+    currentBox.style.display = "none";
+    clearInterval(id)
+    replayClickHandler()
 }
 
 const textInfo = document.getElementById("info")
