@@ -1,8 +1,8 @@
 const sounds = [["boom", "clap", "hihat", "openhat", "ride", "snare", "tink", "tom"],
-                ["boom", "clap", "hihat", "openhat", "ride", "snare", "tink", "tom"], 
-                ["boom", "clap", "hihat", "openhat", "ride", "snare", "tink", "tom"], 
-                ["boom", "clap", "hihat", "openhat", "ride", "snare", "tink", "tom"], 
-                ["boom", "clap", "hihat", "openhat", "ride", "snare", "tink", "tom"], 
+                ["boom1", "clap1", "hihat1", "openhat1", "ride1", "snare1", "tink1", "tom1"], 
+                ["boom2", "clap2", "hihat2", "openhat2", "ride2", "snare2", "tink2", "tom2"], 
+                ["boom3", "clap3", "hihat3", "openhat3", "ride3", "snare3", "tink3", "tom3"], 
+                ["boom4", "clap4", "hihat4", "openhat4", "ride4", "snare4", "tink4", "tom4"], 
 ]
 
 const board = document.getElementById("board")
