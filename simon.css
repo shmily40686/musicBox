@@ -25,10 +25,10 @@
 
 .blocks {
     transition: all .1s ease-in;
-    width: 10vw;
+    width: 15%;
     min-width: 98px;
     min-height: 98px;
-    height: 15vh;
+    height: 15%;
     border-radius: 50%;
     text-align: center;
     border: 1px solid rgb(109, 109, 109);
