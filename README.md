@@ -18,7 +18,7 @@ MusicBox was created using the following technologies:
  * Play or pause the music using the buttons at the top of the screen
  * Control the tempo of the beat using the slider control
 
-![adding sounds to the beat](images/sequencer.gif)
+![adding sounds to the beat](img/sequencer.gif)
 
 ## Simon
 
@@ -26,7 +26,7 @@ MusicBox was created using the following technologies:
  * Click the circles in the same sequence as the computer to successfully pass the round
  * Clicking an incorrect circle ends the game!
 
-![example gameplay](images/simon.gif)
+![example gameplay](img/simon.gif)
 
 ## Piano
 
@@ -34,7 +34,7 @@ MusicBox was created using the following technologies:
  * Press a key on your keyboard to play the corresponding piano key
  * Try clicking or pressing the keys to make something special
 
-![example piano playing](images/piano.gif)
+![example piano playing](img/piano.gif)
 
 ## Created by
   [Xiaowen Ling](https://github.com/shmily40686)
